@@ -1,0 +1,39 @@
+1 | new 키워드 없이 인스턴스를 만드는 경우
+
+String str1 = "hello";
+
+String str2 = "hello";
+
+ 
+
+• "hello"라는 문자열이 메모리 중 상수를 저장하는 영역에 저장된다.
+
+• 두 번째 문장이 실행될 때 hello라는 문자열 상수가 이미 만들어졌으므로 str1이 참조하는 인스턴스를 str2도 참조한다.
+
+ 
+
+2 | new 키워드로 인스턴스를 만드는 경우
+
+String str3 = new String("hello");
+
+String str4 = new String("hello");
+
+ 
+
+• 인스턴스는 무조건 새로 만들어진다.
+
+• 두 번째 문장이 실행될 때도 새로 만들고, str3와 str4는 서로 다른 인스턴스를 참조한다.
+
+ 
+
+String str5 = "hello world";
+
+String str6 = str5.substring(3);
+
+ 
+
+• String은 불변 클래스다. 인스턴스가 될 때 가진 값을 나중에 수정할 수 없다.
+
+• 문자열과 관련한 다양한 메서드가 있다. 메서드를 호출해도 내부의 값이 변하지 않는다.
+
+• String을 반환하는 메서드는 모두 새로운 String을 생성해 반환한다.
